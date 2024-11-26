@@ -10,6 +10,10 @@ class StaticClass {
         System.out.println("This is a static method."+" "+"static variable"+college);
         
     }
+    void changeStaticVaribale() {
+    	college="VIT";
+    	System.out.println(college);
+    }
     //static block
     static {
     	college = "BITS";
@@ -38,5 +42,6 @@ public class StaticDemo {
         // Creating an instance to call non-static methods
         StaticClass instance = new StaticClass();
         instance.accessInstanceFeatures();
+        instance.changeStaticVaribale();
     }
 }
