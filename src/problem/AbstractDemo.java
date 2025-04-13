@@ -5,6 +5,7 @@ abstract class Shape {
     // Abstract method
     abstract void draw();
 
+    abstract void drawTwo();
     // Concrete method
     void display() {
         System.out.println("Displaying a shape.");
@@ -52,11 +53,18 @@ class Circle extends Shape {
     void draw() {
         System.out.println("Drawing a circle.");
     }
+
+	@Override
+	void drawTwo() {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 public class AbstractDemo {
     public static void main(String[] args) {
         Shape circle = new Circle("blue");
+       // Shape s = new Shape("red");
         circle.draw();
         circle.display();
         circle.printColor();

@@ -13,15 +13,16 @@ public class ThrowExample {
     }
 
     public static void main(String[] args) {
-        try {
+       try {
             // Testing with an invalid age
             validateAge(16);
         } catch (IllegalArgumentException e) {
             // Catching and handling the exception
             System.out.println("Exception caught: " + e.getMessage());
-        }
-
+        } 
         // Testing with a valid age
         validateAge(21);
+    	System.out.println("after exception");
+
     }
 }

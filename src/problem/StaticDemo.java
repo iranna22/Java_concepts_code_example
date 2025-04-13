@@ -8,6 +8,7 @@ class StaticClass {
     // static method can only access static members
     static void display() {
         System.out.println("This is a static method."+" "+"static variable"+college);
+        //System.out.println(message);//can't access non static
         
     }
     void changeStaticVaribale() {
@@ -31,6 +32,7 @@ class StaticClass {
         System.out.println("Non-static method called.");
         System.out.println("Accessing instance variable: " + message);
         showMessage(); // Calling another instance method
+        display();
     }
 }
 
