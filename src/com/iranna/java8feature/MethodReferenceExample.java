@@ -48,6 +48,7 @@ public class MethodReferenceExample {
 
         // ✅ Instance Method Reference (on an arbitrary object)
         Employeess.forEach(Employees::printName);
+        
 
         // ✅ Instance Method Reference of a Particular Object
         EmployeesManager manager = new EmployeesManager();
